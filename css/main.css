@@ -107,4 +107,43 @@ h1 {
 
 .news {
     display: flex;
+    gap: 3em;
+    padding: 5em;
+    border: 1px solid black;
+    border-radius: .8em;
+    position: relative;
+
+}
+
+.news::before {
+    position: absolute;
+    content: "";
+    background: url('../images/confetti.svg');
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+}
+p.employees {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 200;
+    line-height: 100%;
+}
+
+p.details {
+    font-size: 1.rem;
+    margin: 0;
+}
+
+/* Right column gallery */
+
+.right-col {
+    display: grid;
+    gap: 2.3rem;
+}
+
+.card {
+    background: gray;
 }
